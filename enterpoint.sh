@@ -20,4 +20,4 @@ nohup sss  -p ${SS_PORT:-8388} \
            -t ${SS_TIMEOUT:-300} \
            &>/dev/null &
 
-while true ; do sleep 1 ; done ;
+while true ; do sleep 9999 ; done ;
