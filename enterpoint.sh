@@ -3,7 +3,7 @@
 nohup socks5s 127.0.0.1:1080  &>/dev/null  & 
 
 nohup kcptuns -t 127.0.0.1:1080 \
-              -l :${KCP_SOCKET_PORT:-1081} \
+              -l :${KCP_SOCKS_PORT:-1081} \
               -mode ${KCP_MODE:-fast2} \
               --key ${KCP_PASS:-$(hostname)} \
               &>/dev/null  & 
